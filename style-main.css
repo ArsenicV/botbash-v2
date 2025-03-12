@@ -59,7 +59,7 @@ font-style: normal;
   model-viewer {
     position: absolute;
     width:99vw; /* Set width of the viewer */
-    height: 100vh; /* Set height of the viewer */
+    height: 99.1vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
@@ -593,5 +593,98 @@ font-style: normal;
 
 /*chuti phone */
 @media only screen and (min-width: 250px) and (max-width: 349px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
 
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 800%;
+    position: absolute;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding-top: 33.6%;
+    letter-spacing: -10px;
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99.9vw; /* Set width of the viewer */
+    height: 99.9vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -1%;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 100%;
+  }
+
+  .rules {
+    left: 20%;
+  }
+  .contact {
+    left: 44%;
+  }
+  .about {
+    left: 70.9%;
+  }
+  .registration {
+    left: 29.7%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 2.5%;
+    PADDING-BOTTOM: 2.5%;
+    padding-left: 4.9%;
+    padding-right: 4.9%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 100%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
 }
