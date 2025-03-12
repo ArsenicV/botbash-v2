@@ -423,7 +423,7 @@ font-style: normal;
   model-viewer {
     position: absolute;
     width:99vw; /* Set width of the viewer */
-    height: 100vh; /* Set height of the viewer */
+    height: 99.1vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
