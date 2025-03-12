@@ -1,0 +1,597 @@
+
+:root{
+  --main : #0D0D0D;
+  --sub: #BFBFBF;
+  --def-sub: #F2F2F2;
+  --accent:#f4f412;
+  --sub-accent: hsl(58, 100%, 80%); /*hsl(58, 100%, 80%*/
+}
+
+html{
+  scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+color: var(--main);
+background: var(--sub-accent);
+}
+
+::selection {
+color: var(--main);
+background: var(--sub-accent);
+}
+
+.nova-square-regular {
+  font-family: "Nova Square", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-mono {
+font-family: "Roboto Mono", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 1500%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    padding-top: 10%;
+    letter-spacing: -10px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 100vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+  }
+
+  .rules {
+    left: 40%;
+  }
+  .contact {
+    left: 50%;
+  }
+  .about {
+    left: 61.5%;
+  }
+  .registration {
+    left: 43.7%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 1%;
+    PADDING-BOTTOM: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: var(--accent);
+    color: var(--main);
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/* additional breakpoint - max width */
+/*@media only screen and (max-width: 768px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+  .title {
+    font-family: "Nova Square";
+    font-size: 1400%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    padding-top: 15%;
+    letter-spacing: -10px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer 
+    height: 100vh; 
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 3.8%;
+  }
+
+  .rules {
+    left: 30%;
+  }
+  .contact {
+    left: 50%;
+  }
+  .about {
+    left: 70.5%;
+  }
+  .registration {
+    left: 41.7%;
+    top: 88%;
+    border: 1px solid var(--accent);
+    padding-top: 1.5%;
+    PADDING-BOTTOM: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    background-color: var(--accent);
+    color: var(--main);
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }
+}*/
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 1500%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding-top: 12%;
+    letter-spacing: 13px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 100vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 120%;
+  }
+
+  .rules {
+    left: 35%;
+  }
+  .contact {
+    left: 50%;
+  }
+  .about {
+    left: 66.5%;
+  }
+  .registration {
+    left: 43.7%;
+    top: 87%;
+    border: 1px solid var(--accent);
+    padding-top: 1.5%;
+    PADDING-BOTTOM: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    background-color: var(--accent);
+    color: var(--main);
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+/*large phones tablets*/
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 1550%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    padding-top: 22%;
+    letter-spacing: -5px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 99.9vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: 0%;
+    resize: 50%;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 150%;;
+  }
+
+  .rules {
+    left: 28%;
+  }
+  .contact {
+    left: 48%;
+  }
+  .about {
+    left: 68.5%;
+  }
+  .registration {
+    left: 39%;
+    top: 83.7%;
+    border: 1px solid var(--main);
+    padding-top: 1.9%;
+    PADDING-BOTTOM: 1.9%;
+    padding-left: 3.7%;
+    padding-right: 3.7%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 150%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+
+}
+
+/*Mobile phones type 1 */
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 1100%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    padding-top: 25.6%;
+    letter-spacing: -10px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 100vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -4%;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 120%;
+  }
+
+  .rules {
+    left: 20%;
+  }
+  .contact {
+    left: 48%;
+  }
+  .about {
+    left: 79.9%;
+  }
+  .registration {
+    left: 37.7%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 2%;
+    PADDING-BOTTOM: 2%;
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 120%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/* iphones, oneplus ++ */
+
+@media only screen and (min-width: 350px) and (max-width: 499px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-family: "Nova Square";
+    font-size: 1000%;
+    position: absolute;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding-top: 38.6%;
+    letter-spacing: -10px;
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99.9vw; /* Set width of the viewer */
+    height: 99.9vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -2%;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 120%;
+  }
+
+  .rules {
+    left: 20%;
+  }
+  .contact {
+    left: 44%;
+  }
+  .about {
+    left: 70.9%;
+  }
+  .registration {
+    left: 29.7%;
+    top: 82%;
+    border: 1px solid var(--accent);
+    padding-top: 2.5%;
+    PADDING-BOTTOM: 2.5%;
+    padding-left: 4.9%;
+    padding-right: 4.9%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 120%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/*chuti phone */
+@media only screen and (min-width: 250px) and (max-width: 349px) {
+
+}
