@@ -59,7 +59,7 @@ font-style: normal;
   model-viewer {
     position: absolute;
     width:99vw; /* Set width of the viewer */
-    height: 99.1vh; /* Set height of the viewer */
+    height: 99vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
@@ -241,7 +241,7 @@ font-style: normal;
   model-viewer {
     position: absolute;
     width:99vw; /* Set width of the viewer */
-    height: 100vh; /* Set height of the viewer */
+    height: 99.1vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
@@ -506,7 +506,7 @@ font-style: normal;
 
   .title {
     font-family: "Nova Square";
-    font-size: 1000%;
+    font-size: 850%;
     position: absolute;
 
     color: #626262;
@@ -515,7 +515,7 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.1;
     text-transform: uppercase;
-    padding-top: 38.6%;
+    padding-top: 39.6%;
     letter-spacing: -10px;
   }
 
@@ -544,8 +544,8 @@ font-style: normal;
     color: var(--accent);
     font-family: "Roboto Mono";
     text-transform: uppercase;
-    top: 4%;
-    font-size: 120%;
+    top: 3%;
+    font-size: 117%;
   }
 
   .rules {
