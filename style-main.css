@@ -36,10 +36,19 @@ font-style: normal;
 
 @media only screen and (min-width: 768px) {
   body {
+    margin: 0;
+    padding: 0;
     background-color: var(--main);
     display: flex;
     justify-content: center;
 
+  }
+
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
   }
 
   .title {
@@ -52,7 +61,7 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.0;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 15vh;
     letter-spacing: -10px
   }
 
@@ -134,7 +143,7 @@ font-style: normal;
   }
   .title {
     font-family: "Nova Square";
-    font-size: 1400%;
+    font-size: 1500%;
 
     color: #626262;
     z-index: -1;
@@ -142,13 +151,13 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.0;
     text-transform: uppercase;
-    padding-top: 15%;
+    padding-top: 15vh;
     letter-spacing: -10px
   }
 
   model-viewer {
     position: absolute;
-    width:99vw; /* Set width of the viewer 
+    width:99vw; 
     height: 100vh; 
     display: grid;
     align-items: center;
@@ -212,11 +221,14 @@ font-style: normal;
     display: flex;
     color: white;
 
-  }
+  }*
 }*/
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  * {
+    margin: 0;
+  }
   body {
     background-color: var(--main);
     display: flex;
@@ -224,28 +236,36 @@ font-style: normal;
 
   }
 
+  .body__inner{
+    width: 99vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
   .title {
     font-family: "Nova Square";
-    font-size: 1500%;
+    font-size: 1600%;
 
     color: #626262;
     z-index: -1;
     text-align: center;
     word-spacing: 5%;
-    line-height: 1.1;
+    line-height: 1.0;
     text-transform: uppercase;
-    padding-top: 12%;
+    padding-top: 16vh;
     letter-spacing: 13px
   }
 
   model-viewer {
-    position: absolute;
+    position: fixed;
     width:99vw; /* Set width of the viewer */
-    height: 99.1vh; /* Set height of the viewer */
+    height: 102vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
     overflow: hidden;
+    top: -2.6vh;
   }
 
 
@@ -263,7 +283,7 @@ font-style: normal;
     font-family: "Roboto Mono";
     text-transform: uppercase;
     top: 4%;
-    font-size: 120%;
+    font-size: 130%;
   }
 
   .rules {
@@ -276,8 +296,8 @@ font-style: normal;
     left: 66.5%;
   }
   .registration {
-    left: 43.7%;
-    top: 87%;
+    left: 41vw;
+    top: 80vh;
     border: 1px solid var(--accent);
     padding-top: 1.5%;
     PADDING-BOTTOM: 1.5%;
@@ -309,6 +329,13 @@ font-style: normal;
 
   }
 
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
   .title {
     font-family: "Nova Square";
     font-size: 1550%;
@@ -319,7 +346,7 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.0;
     text-transform: uppercase;
-    padding-top: 22%;
+    padding-top: 14.8vh;
     letter-spacing: -5px
   }
 
@@ -363,7 +390,7 @@ font-style: normal;
     left: 68.5%;
   }
   .registration {
-    left: 39%;
+    left: 38vw;
     top: 83.7%;
     border: 1px solid var(--main);
     padding-top: 1.9%;
@@ -406,6 +433,13 @@ font-style: normal;
 
   }
 
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
   .title {
     font-family: "Nova Square";
     font-size: 1100%;
@@ -416,19 +450,19 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.0;
     text-transform: uppercase;
-    padding-top: 25.6%;
+    padding-top: 16vh;
     letter-spacing: -10px
   }
 
   model-viewer {
-    position: absolute;
+    position: fixed;
     width:99vw; /* Set width of the viewer */
-    height: 99.1vh; /* Set height of the viewer */
+    height: 101vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
     overflow: hidden;
-    top: -4%;
+    top: -1vh;
   }
 
 
@@ -495,13 +529,21 @@ font-style: normal;
 /* iphones, oneplus ++ */
 
 @media only screen and (min-width: 350px) and (max-width: 499px) {
-  body {
+  * {
     margin: 0;
-    padding: 0;
+  }
+  body {
     background-color: var(--main);
     display: flex;
     justify-content: center;
 
+  }
+
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
   }
 
   .title {
@@ -515,19 +557,19 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.1;
     text-transform: uppercase;
-    padding-top: 38.6%;
+    padding-top: 20vh;
     letter-spacing: -10px;
   }
 
   model-viewer {
-    position: absolute;
+    position: fixed;
     width:99.9vw; /* Set width of the viewer */
-    height: 99.9vh; /* Set height of the viewer */
+    height: 101vh; /* Set height of the viewer */
     display: grid;
     align-items: center;
     z-index: 60;
     overflow: hidden;
-    top: -7%;
+    top: -1vh;
   }
 
 
@@ -591,7 +633,7 @@ font-style: normal;
   }*/
 }
 
-/*chuti phone */
+/*chuti phone  -not in vh */
 @media only screen and (min-width: 250px) and (max-width: 349px) {
   body {
     margin: 0;
@@ -602,9 +644,16 @@ font-style: normal;
 
   }
 
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
   .title {
     font-family: "Nova Square";
-    font-size: 800%;
+    font-size: 700%;
     position: absolute;
 
     color: #626262;
@@ -613,7 +662,7 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.1;
     text-transform: uppercase;
-    padding-top: 33.6%;
+    padding-top: 20vh;
     letter-spacing: -10px;
   }
 
@@ -625,7 +674,7 @@ font-style: normal;
     align-items: center;
     z-index: 60;
     overflow: hidden;
-    top: -1%;
+    top: -1vh;
   }
 
 
@@ -643,7 +692,7 @@ font-style: normal;
     font-family: "Roboto Mono";
     text-transform: uppercase;
     top: 4%;
-    font-size: 100%;
+    font-size: 90%;
   }
 
   .rules {
@@ -665,7 +714,7 @@ font-style: normal;
     padding-right: 4.9%;
     background-color: var(--accent);
     color: var(--main);
-    font-size: 100%;
+    font-size: 90%;
   }
   .registration:hover {
     color: var(--accent);
