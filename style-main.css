@@ -515,7 +515,7 @@ font-style: normal;
     word-spacing: 5%;
     line-height: 1.1;
     text-transform: uppercase;
-    padding-top: 39.6%;
+    padding-top: 33.6%;
     letter-spacing: -10px;
   }
 
@@ -559,7 +559,7 @@ font-style: normal;
   }
   .registration {
     left: 29.7%;
-    top: 82%;
+    top: 77%;
     border: 1px solid var(--accent);
     padding-top: 2.5%;
     PADDING-BOTTOM: 2.5%;
