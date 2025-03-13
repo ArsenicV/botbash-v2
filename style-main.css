@@ -540,7 +540,7 @@ font-style: normal;
     position: fixed;
     display: flex;
     z-index: 100;
-    font-size: 110%;
+    font-size: 105%;
     color: var(--accent);
     font-family: "Roboto Mono";
     text-transform: uppercase;
@@ -625,7 +625,7 @@ font-style: normal;
     align-items: center;
     z-index: 60;
     overflow: hidden;
-    top: -1%;
+    top: -3%;
   }
 
 
