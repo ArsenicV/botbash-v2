@@ -1,0 +1,1345 @@
+
+:root{
+  --main : #0D0D0D;
+  --sub: #BFBFBF;
+  --def-sub: #F2F2F2;
+  --accent:#f4f412;
+  --sub-accent: hsl(58, 100%, 80%); /*hsl(58, 100%, 80%*/
+}
+
+html{
+  scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+color: var(--main);
+background: var(--sub-accent);
+}
+
+::selection {
+color: var(--main);
+background: var(--sub-accent);
+}
+
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.iceland-regular {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.oxanium {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.nova-square-regular {
+  font-family: "Nova Square", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-mono {
+font-family: "Roboto Mono", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+
+
+  }
+
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 0.95; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 1350%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: 0px;
+  
+
+    left: 0%;
+    position: relative;
+  }
+
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 120%;
+  }
+
+  .total-class-title-sub {
+    left: 6%;
+    top: 5%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:65%;
+    top: 85%;
+    right:2%;
+    width: 20%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: right;
+
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 99vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60 ; /*60*/
+    overflow-x: hidden;
+
+  }
+
+  model-viewer::part(gesture-hand) {
+    display: none;
+}
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 100%;
+    color: var(--accent);
+    font-family: "quicksand";
+    text-transform: uppercase;
+  }
+
+  .rules {
+    left: 5%;
+  }
+  img {
+    width: 9rem;
+    height: 5rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 0;
+  }
+  .contact {
+    left: 80%;
+    border: 1px solid var(--accent);
+    padding: .5% 1% .5% 1%;
+    border-radius: 20px;
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 90%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: .5% 1% .5% 1%;
+    border-radius: 20px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 43.7%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 1%;
+    PADDING-BOTTOM: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: var(--accent);
+    color: var(--main);
+    border-radius: 5px;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/* additional breakpoint - max width */
+/*@media only screen and (max-width: 768px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+  .title {
+    font-family: "Nova Square";
+    font-size: 1500%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: center;
+    word-spacing: 5%;
+    line-height: 1.0;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: -10px
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; 
+    height: 100vh; 
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    top: 3.8%;
+  }
+
+  .rules {
+    left: 30%;
+  }
+  .contact {
+    left: 50%;
+  }
+  .about {
+    left: 70.5%;
+  }
+  .registration {
+    left: 41.7%;
+    top: 88%;
+    border: 1px solid var(--accent);
+    padding-top: 1.5%;
+    PADDING-BOTTOM: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    background-color: var(--accent);
+    color: var(--main);
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*
+}*/
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    cursor:crosshair;
+
+  }
+
+  .body__inner{
+    width: 99.9vw;
+    height: 99.9vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 0.95; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 1400%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: -2px;
+  }
+
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 140%;
+    width: 30%;
+  }
+
+  .total-class-title-sub {
+    left: 4%;
+    top: 5%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:65%;
+    top: 85%;
+    right:2%;
+    width: 18%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: right;
+
+  }
+
+  model-viewer {
+    position: fixed;
+    width:99vw; /* Set width of the viewer */
+    height: 102vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -2.6vh;
+    cursor:crosshair;
+  }
+
+  model-viewer::part(gesture-hand) {
+    display: none;
+}
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 80%;
+    color: var(--accent);
+    font-family: "quicksand";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 130%;
+  }
+
+  img {
+    width: 13rem;
+    height: 7rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 1%;
+    z-index: 62;
+  }
+  .contact {
+    left: 70%;
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 40px;
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 85%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 40px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 35%;  /*35*/
+    top: 80vh;
+    border: 1px solid var(--accent);
+    padding-top: 1.5%;
+    PADDING-BOTTOM: 1.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    background-color: var(--accent);
+    color: var(--main);
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+/*large phones tablets*/
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .body__inner{
+    width: 99.99vw;
+    height: 99.99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 5; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 1000%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: 0px;
+  
+
+    left: 0%;
+    position: relative;
+  }
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 140%;
+    width: 40%;
+  }
+
+  .total-class-title-sub {
+    left: 4%;
+    top: 5%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:65%;
+    top: 85%;
+    right:2%;
+    width: 18%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: right;
+
+  }
+
+  model-viewer {
+    position: absolute;
+    width:99vw; /* Set width of the viewer */
+    height: 99.9vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: 0%;
+    resize: 50%;
+  }
+
+  model-viewer::part(default-interaction-prompt) { 
+    display: none !important; 
+}
+
+model-viewer::part(gesture-hand) { 
+    display: none !important; 
+}
+
+/* Alternative shadow DOM workaround */
+model-viewer::shadow .default-prompt,
+model-viewer::shadow .gesture-container {
+    display: none !important;
+}
+
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Quicksand";
+    text-transform: uppercase;
+    top: 3%;
+    font-size: 100%;;
+  }
+
+  .rules {
+    left: 28%;
+  }
+  img {
+    width: 11rem;
+    height: 6rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 1%;
+  }
+  .contact {
+    left: 70%;
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 20px;
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 85%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 20px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 31%;
+    top: 83.7%;
+    border: 1px solid var(--main);
+    padding-top: 1.9%;
+    PADDING-BOTTOM: 1.9%;
+    padding-left: 3.7%;
+    padding-right: 3.7%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 150%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+
+}
+
+/*Mobile phones type 1 */
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .body__inner{
+    width: 99.99vw;
+    height: 99.99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 0.95; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 700%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: 0px;
+  
+
+    left: 0%;
+    position: relative;
+  }
+
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 90%;
+    width: 40%;
+
+    
+  }
+
+  .total-class-title-sub {
+    left: 4%;
+    top: 5%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:45%;
+    top: 70%;
+    right:-18%;
+    width: 60%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: left;
+
+transform: rotate(270deg);
+display: none;
+  }
+
+  model-viewer {
+    position: fixed;
+    width:99vw; /* Set width of the viewer */
+    height: 101vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -1vh;
+  }
+
+  model-viewer::part(default-interaction-prompt) {
+    display: none;
+}
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 60%;
+    color: var(--accent);
+    font-family: "quicksand";
+    text-transform: uppercase;
+    top: 4%;
+  }
+
+  .rules {
+    left: 20%;
+  }
+  img {
+    width: 6rem;
+    height: 3.5rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 1%;
+  }
+  .contact {
+    left: 70%;
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 20px;
+
+
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 85%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 20px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 35%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 2%;
+    PADDING-BOTTOM: 2%;
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+    background-color: var(--accent);
+    border-radius: 5px;
+    color: var(--main);
+    font-size: 70%;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/* iphones, oneplus ++ */
+
+@media only screen and (min-width: 350px) and (max-width: 499px) {
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .body__inner{
+    width: 99.9vw;
+    height: 99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 0.95; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 700%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: -5px;
+  
+
+    left: 0%;
+    position: relative;
+  }
+
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 70%;
+    width: 40%;
+
+    
+  }
+
+  .total-class-title-sub {
+    left: 4%;
+    top: 4%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:45%;
+    top: 70%;
+    right:-18%;
+    width: 60%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: left;
+
+transform: rotate(270deg);
+display: none;
+  }
+
+  model-viewer {
+    position: fixed;
+    width:99.9vw; /* Set width of the viewer */
+    height: 101vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -1vh;
+  }
+
+  model-viewer::part(default-interaction-prompt) {
+    display: none;
+}
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 60%;
+    color: var(--accent);
+    font-family: "Quicksand";
+    text-transform: uppercase;
+    top: 3%;
+
+  }
+
+  .rules {
+    left: 20%;
+  }
+  img {
+    width: 6rem;
+    height: 3.5rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 1%;
+    z-index: 100;
+  }
+  .contact {
+    left: 60%;
+    border: 1px solid var(--accent);
+    padding: 1.3% 2% 1.3% 2%;
+    border-radius: 40px;
+
+
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 80%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: 1.3% 2% 1.3% 2%;
+    border-radius: 40px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 28.7%;
+    top: 80%;
+    border: 1px solid var(--accent);
+    padding-top: 2.5%;
+    PADDING-BOTTOM: 2.5%;
+    padding-left: 4.9%;
+    padding-right: 4.9%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 70%;
+    border-radius: 5px;;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}
+
+/*chuti phone  -not in vh */
+@media only screen and (min-width: 250px) and (max-width: 349px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .body__inner{
+    width: 99.99vw;
+    height: 99.99vh;
+    position: absolute;
+    z-index: -500;
+  }
+
+  .grain {
+    background-color: transparent; /* Dark base color for depth */
+    background-image: url('mono/150-90-5-monochrome.png');
+    background-size: 150px 150px;  /* Smaller tile size for fine grain */
+    background-blend-mode: overlay; /* Enhances the grain effect */
+    opacity: 0.95; /* Subtle effect */
+    
+    /* Ensuring full-screen coverage */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    z-index: -400; 
+    position: fixed;
+  }
+
+  .title {
+    font-family: "iceland";
+    font-size: 700%;
+
+    color: #626262;
+    z-index: -1;
+    text-align: left;
+    word-spacing: 5%;
+    line-height: 0.6;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    letter-spacing: -5px;
+  
+
+    left: 0%;
+    position: relative;
+  }
+
+  .sub-title {
+    color: var(--sub);
+    opacity: 70%;
+    z-index: -1;
+    word-spacing: 5%;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    left: 2%;
+    top: 3vh;
+    font-family: "oxanium";
+    font-size: 70%;
+    width: 50%;
+
+    
+  }
+
+  .total-class-title-sub {
+    left: 4%;
+    top: 4%;
+    position: absolute;
+  }
+  .yl {
+    color: var(--accent);
+  }
+
+  .description {
+    color: var(--sub);
+    opacity: 60%;
+    position: absolute;
+    font-family: "oxanium";
+    font-sizE:45%;
+    top: 70%;
+    right:-18%;
+    width: 60%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: left;
+
+transform: rotate(270deg);
+display: none;
+  }
+  
+  
+  
+  model-viewer {
+    position: absolute;
+    width:99.9vw; /* Set width of the viewer */
+    height: 99.9vh; /* Set height of the viewer */
+    display: grid;
+    align-items: center;
+    z-index: 60;
+    overflow: hidden;
+    top: -1vh;
+  }
+
+  model-viewer::part(default-interaction-prompt) {
+    display: none;
+}
+
+
+
+  ul {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    font-size: 110%;
+    color: var(--accent);
+    font-family: "Quicksand";
+    text-transform: uppercase;
+    top: 4%;
+    font-size: 50%;
+  }
+
+  .rules {
+    left: 20%;
+  }
+  img {
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    position:absolute;
+    left: 2%;
+    top: 1%;
+    z-index: 100;
+  }
+  .contact {
+    left: 60%;
+    border: 1px solid var(--accent);
+    padding: 1.3% 2.5% 1.3% 2.5%;
+    border-radius: 40px;
+
+
+  }
+  .contact:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .about {
+    left: 80%; /*61.5*/
+    border: 1px solid var(--accent);
+    padding: 1.3% 2.5% 1.3% 2.5%;
+    border-radius: 40px;
+  }
+  .about:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    text-decoration: none;;
+  }
+  .registration {
+    left: 30%;
+    top: 85%;
+    border: 1px solid var(--accent);
+    padding-top: 2.5%;
+    PADDING-BOTTOM: 2.5%;
+    padding-left: 4.9%;
+    padding-right: 4.9%;
+    background-color: var(--accent);
+    color: var(--main);
+    font-size: 60%;
+    border-radius:5px;
+  }
+  .registration:hover {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /*p{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    color: white;
+
+  }*/
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot bash 2025</title>
+    <link rel="icon" type="image/x-icon" href="src/favico.ico" />
+    <link rel="stylesheet" href="style-main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Iceland&family=Oxanium:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<div class="body__inner"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+<div class="grain"></div>
+
+
+    <section id="nav">
+        <div class="navigation">
+        <ul>
+            <li><a href="https://botbash2025.com" class="rules"></a><img src="dist/bot-bash-logo.png" alt=""></li>
+            <li><a href="tel:+94703639000" class="contact">contact</a></li>
+            <li><a href="dist/about.html" class="about">about</a></li>
+            <li><a href="#" class="registration btn">registrations closed</a></li>
+        </ul>
+        </div>
+    </section>
+
+    <div class="total-class-title-sub">
+    <div class="title">Bot bash<br>2025</div>
+    <div class="sub-title">Design the <span class="yl">future</span>, Defend your <span class="yl">legacy</span>...</div>
+      </div>
+
+    <div class="description">Bot Bash is Sri Lanka’s premier International Robot Battle Championship, organized by Tech to Oxygen.
+      This event challenges teams from all round in the world to design, build, and battle combat robots in a high-intensity arena and
+      it's the ultimate battlefield for robotic warriors.</div>
+    <model-viewer 
+    src="robot_ball.glb" 
+    alt="A 3D model of a robot"
+    camera-controls
+    camera-target="auto"
+    min-camera-orbit= "auto auto 5.6m"
+    max-camera-orbit="auto auto 4.7m"
+    orbit-sensitivity="0.1"
+    disable-tap
+    disable-pan
+    interaction-prompt="none"></model-viewer>
+</model-viewer>
+<!--max cam orbit -5.7
+min -5.6-->
+<script>
+console.log(customElements.get('model-viewer').version);
+</script>
+
+<!--<script>
+    const modelViewer = document.getElementById('model');
+
+    let lastX = 0;
+    let lastY = 0;
+    
+    document.addEventListener('mousemove', (event) => {
+      const { innerWidth: width, innerHeight: height } = window;
+      
+      // Get the relative mouse position
+      const deltaX = event.clientX - lastX;
+      const deltaY = event.clientY - lastY;
+
+      // Update the rotation based on mouse movement
+      const newOrbitX = modelViewer.getCameraOrbit().phi + (deltaY / height) * 100;  // Vertical movement
+      const newOrbitY = modelViewer.getCameraOrbit().theta + (deltaX / width) * 100; // Horizontal movement
+
+      // Apply the new camera orbit
+      modelViewer.cameraOrbit = `${newOrbitY}rad ${newOrbitX}rad 3m`;
+
+      // Store the last position for next movement
+      lastX = event.clientX;
+      lastY = event.clientY;
+    });
+  </script>-->
+
+
+
+
+<!--<script>
+    const modelViewer = document.quarySelector('model-viewer');
+
+    //disable zoom
+    modelViewer.addEventListener('wheel', (event) => event.preventDefault());
+    modelViewer.addEventListener('touchstart', (event) => {
+        if (event.touches.length > 1) event.preventDefault();  //prevent pinch zoom
+    }, { passive: false });
+    </script>
+
+
+    camera-target="1m 01m 1m"
+    orbit-sensitivity="1" //model viewer
+-->
+  
+<!--<div class="hero">
+    <div class="timebox">
+      <div class="time">
+        <h2 id="days">00</h2>
+       </div>
+  
+       <div class="time">
+        <h2 id="hours">00</h2>
+       </div>
+  
+       <div class="time">
+        <h2 id="minutes">00</h2>
+       </div>
+  
+       <div class="time">
+        <h2 id="seconds">00</h2>
+       </div>
+    </div>
+  </div>
+
+  <script src="timer.js"></script>-->
+
+</body>
+</html>
